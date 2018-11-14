@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+<style>
+
+	body{
+		margin: 0px;
+	}
+	#qc {
+			width: 100%; height: 80px;
+			background-color: #13005B;
+			margin-top: -100px;
+			transition: all 1s;
+			position: fixed;
+			z-index: 2; color: white;
+		}
+	#qc img {
+		margin-top: 20px; margin-left: 100px;
+	}
+	.u1 {
+		float: right; font-variant: small-caps; width: 50%; height: 100px; box-sizing: border-box; margin-top: 0; font-weight: bold; margin-top: 20px;
+	}
+	.u1 li {
+		float: left; width: 20%; height: 
+		100px; box-sizing: border-box;
+	}
+
+
+
+	#d1 {
+		width: 100%; background-image: url(Hinh/16.jpg); background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			height: 700px; padding-top: 200px;
+			transition: all 1s; box-sizing: border-box;
+			overflow: hidden;
+
+	}
+	#cha {
+			overflow: hidden; width: 100%
+
+		}
+
+	#d1:hover { transform: scale(1.1, 1.1);}
+
+	#d11 {
+				text-align: center; font-weight: bold;
+		font-family: sans-serif; color: white;
+		width: 100%; height: 200px; background-color: #13005B;
+		opacity: 0.5; box-sizing: border-box; padding-top: 50px;
+
+	}
+
+
+	ul.u {
+			 width:82%; height: 30px; box-sizing: border-box; font-weight: bold; float: center; clear: both;
+			 padding-left: 270px;
+	}
+	ul.u li {
+		float: left; width: 11%; height: 30px; list-style-type:none; box-sizing: border-box; text-align: center; font-size: 15px; text-align: center;
+	}
+
+	.link{
+		text-decoration: none; color: white;
+	}
+
+
+	#big1 {
+		margin-top: 50px;
+		width: 60%; height: 2900px;
+		float: left; margin-left: 5%; clear: both;
+		box-sizing: border-box;
+		margin-left: 7%;
+	}
+
+	#big2{
+		margin-top: 100px;
+		width: 20%;
+		height: auto;
+		float: left;
+		margin-left: 8%;
+		text-align: initial;
+		line-height: 25px;
+	}
+
+	.border{ border-top: solid 1px #9A7D0A;
+		width: 100%; padding: 10px; margin-bottom: 10px;
+	}
+
+	#big2 ul {
+		box-sizing: border-box;
+	}
+	#li1 {
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+
+
+	.p {
+		font-style: italic; font-size: 18px;  text-align: justify;
+	}
+
+	#big1 p span{
+		font-size: 40px;
+		font-family: monospace;
+	}
+	#p1{
+		font-size: 30px;
+		font-style: italic;
+	}
+	.note {
+		text-align: center;
+		font-style: italic;
+	}
+
+
+	#d5{
+		margin-top: 50px;
+		width: 100%; height: 170px;
+		text-align: center;
+		background-color: #13005B;
+		color: white;
+		padding-top: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+	#d5 span {
+		font-family: monospace; color: #D35400;
+		font-weight: bold;
+	}
+	#dc{
+		text-decoration: none; color: #D35400;
+	}
+
+
+</style>
+<script>
+	function showQC() {
+			var y = window.pageYOffset;
+			if(y>700){
+				var d = document.getElementById("qc");
+				d.style.marginTop='0px';
+			}else{
+				var d = document.getElementById("qc");
+				d.style.marginTop='-100px';
+			}
+		}
+</script>
+</head>
+
+<body onscroll="showQC()">
+<div id = "qc">
+	<a href="Assignment.html"><img src="Hinh\logo-2.png"></a>
+		<ul class = "u1" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li><a href="gioithieuAgm.html" class="link">GIỚI  THIỆU</a></li>
+		<li> <a href="draffTrangBH.html" class = "link">SẢN  PHẨM</a></li>
+		<li><a href="blogAgm.html" class="link">BLOG  HOA</a></li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN  HỆ</a></li>
+	</ul>
+</div>
+<div id = "cha">
+<div id = "d1">
+	<div id = "d11">
+	<a href="Assignment.html"><img src="Hinh\logoLVD.png"></a>
+	<ul class = "u" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li>|</li>
+		<li><a href="gioithieuAgm.html" class = "link">GIỚI  THIỆU</a></li>
+		<li>|</li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN PHẨM</a></li>
+		<li>|</li>
+		<li><a href="blogAgm.html" class="link">BLOG HOA</a></li>
+		<li>|</li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN HỆ</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+	<div id = "big1">
+		<p id="p1">MỘT MÓN QUÀ TINH THẦN NHƯNG LẠI THỰC TẾ. BẠN ĐÃ BIẾT CHƯA?</p>
+		<p class = "p"><i>Hoa là món quà đã quá đỗi quen thuộc mỗi dịp 8/3. Vậy thì năm nay tại sao bạn không thử tặng một món quà tinh thần nhưng lại thực tế cho những người phụ nữ thân yêu bên cạnh mình? <b>Thế giới Lavender</b> có một món quà bí mật trong bài viết này dành riêng cho bạn. Hãy đọc hết và cảm nhận nhé!</i><br />
+		Món quà tinh thần nhưng lại thực tế? Hai tiêu chí này nghe có vẻ trái ngược nhau nhưng lại có thể tìm được ở món quà kỳ diệu mà <b>Thế giới Lavender</b> muốn giới thiệu riêng cho bạn: <b>tinh dầu khuếch tán</b> xuất xứ từ Thái Lan, đem đến một không gian thư giãn, yêu đời cho người phụ nữ của bạn.<br />
+		Với món quà này, thứ những người phụ nữ nhận không chỉ là món quà hữu hình, mà còn là sự thư thái, an nhà và thoải mái như vừa bước ra từ một khu vườn mùa hạ.</p>
+		<p><span>Chăm lo cho sức khỏe tinh thần của những người phụ nữ</span></p>
+		<p class = "p">Phụ nữ là những con người phi thường. Từ những việc lớn lao như quản lý chi tiêu, công việc xã hội, làm vừa lòng họ hàng hai bên, cho đến những việc tủn mủn lặt vặt như hôm nay mấy giờ đón con, thực đơn ngày mai là gì, tháng này nhà có đám gì không.. đều có bàn tay của người phụ nữ.<br />
+		Bạn đã bao giờ biết được đằng sau những phàn nàn, cau có của mẹ là một núi nỗi lo lắng không tên để dành cho bạn một cuộc sống an nhàn không suy nghĩ? 8/3 này, hãy để mẹ được thư giãn với tinh dầu khuếch tán chiết xuất 100% từ thiên nhiên.</p>
+		<img src="Hinh\girlLVD.jpg" width="100%" height="auto">
+		<p class="note">Cô gái bên đóa Lavender quyến rủ</p>
+		<p class = "p">
+		Tùy theo sở thích của người nhận mà bạn có thể chọn lựa các mùi hương như lavender, sả chanh, hoa hồng, dưa lưới, hoa lan, cam. Tinh dầu khuếch tán làm cho căn phòng có mùi thơm nhẹ nhàng của cây cỏ, giúp làm dịu dây thần kinh, tạo cảm giác phiêu bồng như đang được hòa mình cùng thiên nhiên.<br />
+		Không những vậy, tinh dầu khuếch tán còn có tác dụng rất tốt đối với giấc ngủ, giúp giấc ngủ đến dễ dàng và sâu hơn. Quà tặng này rất thích hợp cho phụ nữ trung niên hoặc những người làm việc trí óc căng thẳng, kém tập trung hoặc hay cau có.
+		</p>
+
+		<p><span>Cách sử dụng tinh dầu khuếch tán như đi spa tại nhà</span></p>
+		<p class = "p">Bạn chỉ cần cắm que gỗ vào miệng chai để tinh dầu khuếch tán trong chai được dẫn xuất và lan tỏa ra khắp phòng. Nếu thích mùi thơm nồng, bạn có thể cắm 2 đến 3 que, mùi thơm thoang thoảng thì chỉ cần 1 que là đủ. Bạn vẫn có thể điều chỉnh mùi hương bằng cách thêm hoặc bớt các que gỗ.<br />
+		Que gỗ dùng để dẫn xuất tinh dầu có thể sử dụng nhiều lần. Sau khi dùng, bạn chỉ cần đóng nắp chai tinh dầu lại và đem que gỗ ra phơi nắng là đã có thể sử dụng được tiếp cho lần sau. Một lọ tinh dầu có thể tỏa hương liên tục đến 3 tuần.</p>
+		<img src="Hinh\KhechTanLVD.jpg" width="100%" height="auto">
+		<p class = "note"><b><i>Tinh dầu khuếch tán Lavender</i></b> có xuất xứ Thái Lan</p>
+		<p class = "p">Tinh dầu khuếch tán không chỉ là món quà độc đáo, quý phái mà còn rất thực tế cho dịp 8/3 này. Chỉ với một lọ tinh dầu, không gian nhà bạn đã trở nên thật nên thơ, khiến mọi người ai cũng vui vẻ, yêu đời và muốn gần nhau hơn.<br />
+		Ở Thế giới Lavender còn rất nhiều bí mật khác đang đợi bạn khám phá. Hãy đến Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận để đem về những món quà thật độc đáo cho những người phụ nữ thân yêu nhé!</p>
+	</div>
+
+	<div id = "big2">
+		<ul style="list-style-type: none;">
+
+			<li id = "li1">BÀI VIẾT MỚI NHẤT</li>
+		<li class="border">LÀM THẾ NÀO ĐỂ TÌM LẠI NĂNG LƯƠNG SỐNG TÍCH CỰC?
+		</li>
+		
+		<li class = "border">
+			REFRESH TINH THẦN LÀM VIỆC: GÓC BÀN MỚI, THÊM HỨNG KHỞI, THÊM YÊU ĐỜI
+		</li>
+
+		<li class="border">
+			“EM ƠI, SAO MÌNH KHÔNG YÊU LẠI TỪ ĐẦU VÀ HẠNH PHÚC DÀI LÂU?”	
+		</li>
+		<li class="border">
+			MỘT MÓN QUÀ TINH THẦN NHƯNG LẠI THỰC TẾ. BẠN ĐÃ BIẾT CHƯA?
+		</li>
+		<li class="border">
+			8/3 ĐỪNG CHỈ TẶNG HOA, HÃY TẶNG THÀNH Ý
+		</li>
+		<li class="border">
+			HÃY LÀM NGƯỜI PHỤ NỮ CỦA BẠN CƯỜI VÌ NGẠC NHIÊN VÀ KHÓC VÌ CẢM ĐỘNG
+		</li>
+		<li class="border">
+			KỊCH BẢN HOÀN HẢO CHO TẤT CẢ NHỮNG NGƯỜI PHỤ NỮ QUANH BẠN DỊP 8/3
+		</li>
+		<li class="border">
+			LÀM GÌ ĐỂ MẸ CẢM ĐỘNG VÀO DỊP 8/3?
+		</li>
+		<li class="border">
+			LIỆU BẠN ĐÃ CHỌN HOA THỂ HIỆN ĐÚNG HÀM Ý CỦA MÌNH?
+		</li>
+		<li class="border">
+			THÔNG ĐIỆP VALENTINE NGỌT NGÀO ĐẰNG SAU BÓ HOA LAVENDER KHÔMÁCH BẠN CÁCH LÀM NƯỚC HOA LAVENDER HANDMADE TẠI NHÀ
+		</li>
+		<li class="border">
+			TẾT NAY CHƠI HOA GÌ?
+		</li>
+		<li class="border">
+			4 GIẢI PHÁP TRƯNG HOA TẾT CHO CĂN HỘ THIẾU SÂN VƯỜN
+		</li>
+		<li class="border">
+			THỦ THUẬT “ĐỌC” TÂM LÝ NÀNG THẬT DỄ DÀNG ĐỂ CHỌN QUÀ VALENTINE VỪA Ý
+		</li>
+
+		<li class="border">
+			NHÌN THẤU TÂM LÝ CRUSH ĐỂ TỎ TÌNH THÀNH CÔNG
+		</li>
+
+		<li class="border">
+			BẬT MÍ LOẠI HOA TẾT ĐẢM BẢO 5 TIÊU CHÍ THƠM, ĐẸP, LẠ, DÙNG LÂU VÀ Ý NGHĨA
+		</li>
+
+		<li class="border">
+			6 MẸO HAY ĐỂ GIỮ HƯƠNG LAVENDER KHÔ LÂU PHAI NHẤT
+		</li>
+
+		<li class="border">
+			SỐNG NHẸ NHÀNG HƠN VỚI LỌ HOA LAVENDER KHÔ TỰ CẮM
+		</li>
+
+		<li class="border">
+			THIẾU 5 YẾU TỐ SAU ĐÂY, TÌNH YÊU CỦA BẠN SẼ DẦN PHAI MÀU
+		</li>
+
+		<li class="border">
+			BÍ MẬT CỦA CÔ GÁI LUÔN TỎA RA KHÍ CHẤT CUỐN HÚT LẠ KỲ
+		</li>
+		<li class="border">
+			NĂM MỚI TỚI, THÊM HỨNG KHỞI VỚI LAVENDER
+		</li>
+
+		<li class="border">
+			GIÁNG SINH VÀ TÌNH YÊU Ở QUANH ĐÂY
+		</li>
+
+		<li class="border">
+			CÙNG BẠN LÀM NÊN NOEL MỚI LẠ, ẤM ÁP
+		</li>
+		
+		<li class="border">
+			CÓ AI YÊU MÙI HƯƠNG LAVENDER KHÔNG?
+		</li>
+		
+		<li class="border">
+			LAVENDER – CƠN MƠ BẤT TẬN
+		</li>
+		
+		<li class="border">
+			HOA KHÔ LAVENDER – LAVENDER LOVER
+		</li>
+		
+		<li class="border">
+			NƯỚC PHÁP – THIÊN ĐƯỜNG CỦA MÙI HƯƠNG
+		</li>
+		
+		<li class="border">
+			NHỮNG BÓ HOA LAVENDER KHÔ THƠM NGÁT
+		</li>
+		
+		<li class="border">
+			HOA PHALARIS KHÔ – SẮC HƯƠNG MỚI VỀ
+		</li>
+
+		<li class="border">
+			BROOM BLOOM – HOA KHÔ NHẬP KHẨU ĐA SẮC
+		</li>
+
+		<li class="border">
+			MẪU 14: SET QUÀ HOA LAVENDER KHÔ
+		</li>
+
+		<li class="border">
+			NHỮNG MẸO VẶT LÀM THƠM TỦ QUẦN ÁO
+		</li>
+
+		<li class="border">
+			HOA XINH 20/10 – CHO NGƯỜI PHỤ NỮ BẠN YÊU THƯƠNG
+		</li>
+	</div>
+
+<div id = "d5">
+	<p><span><a href="Assignment.html" id = "dc">Shop Thế Giới Lavender</a> </span><br />
+Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận<br />
+Hotline: <span>0169 997 5517 </span>(Mr Trin)<br />
+Facebook: <span>Thế giới Lavender</span><br /><br />
+<a href="https://www.facebook.com/trin.nguyen.16" target="_blank"><img src="Hinh\facebook2.png" width="120px" height="30px"></a></p>
+</div>
+</body>
+</html>

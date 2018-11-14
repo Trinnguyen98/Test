@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script>
+		function showQC() {
+			var y = window.pageYOffset;
+			if(y>700){
+				var d = document.getElementById("qc");
+				d.style.marginTop='0px';
+			}else{
+				var d = document.getElementById("qc");
+				d.style.marginTop='-100px';
+			}
+		}
+	</script>
+	<script>
+	
+			function validate()
+			{
+				var sd1 = document.getElementsByClassName('sd1');
+
+
+				if (sd1[0].value=="") 
+				{
+					window.alert("Vui lòng nhập tên.");
+					sd1[0].focus();
+					return false;
+				}
+				else if (sd1[1].value=="") {
+					sd1[1].focus();
+					alert("Vui lòng nhập địa chỉ.");
+					return false;
+				}
+				else if (sd1[2].value == "") {
+					sd1[2].focus();
+					alert("Vui lòng nhập Email.");
+					return false;
+				}
+				else if (sd1[3].value == "")
+				{
+					sd1[3].focus();
+					alert("Vui lòng nhập số điện thoại.");
+					return false;
+				}
+				else if(sd1[3].value.match("^[0][0-9]{9,10}$")==null) 
+				{
+					alert("Số điện thoại của bạn nhập không hợp lệ.");
+					sd1[3].focus();
+					return false;
+				} else if(sd1[4].value == "")
+				{
+					sd1[4].focus();
+					alert("Vui lòng nhập góp ý");
+					return false;
+				}
+				alert("Chân thành cảm ơn góp ý của bạn.");
+				window.open("Assignment.html","_top");
+				return true;
+			}
+
+	</script>
+	<style>
+
+
+		body{
+			margin: 0px;
+		}
+		#qc {
+				width: 100%; height: 80px;
+				background-color: #13005B;
+				margin-top: -100px;
+				transition: all 1s;
+				position: fixed;
+				z-index: 2; color: white;
+			}
+		#qc img {
+			margin-top: 20px; margin-left: 100px;
+		}
+		.u1 {
+			float: right; font-variant: small-caps; width: 50%; height: 100px; box-sizing: border-box; margin-top: 0; font-weight: bold; margin-top: 20px;
+		}
+		.u1 li {
+			float: left; width: 20%; height: 
+			100px; box-sizing: border-box;
+		}
+
+
+		#d1 {
+			
+			width: 100%; background-image: url(Hinh/16.jpg); background-repeat: repeat-y;
+				background-position: right;
+				background-attachment: fixed;
+				height: 1500px; padding-top: 200px;
+				transition: all 1s; box-sizing: border-box;
+				overflow: hidden;
+
+		}
+		#cha {
+			overflow: hidden; width: 100%;
+
+		}
+
+		fieldset:hover{ transform: scale(1.1, 1.1)
+			
+		}
+
+		#d11 {
+			width: 100%; height: 200px; background-color: #13005B;
+			opacity: 0.5; box-sizing: border-box; padding-top: 50px;
+			text-align: center; font-weight: bold;
+			font-family: sans-serif; color: white;
+
+		}
+
+
+		ul.u {
+				 width:82%; height: 30px; box-sizing: border-box; font-weight: bold; float: center; clear: both;
+				 padding-left: 270px;
+		}
+		ul.u li {
+			float: left; width: 11%; height: 30px; list-style-type:none; box-sizing: border-box; text-align: center; font-size: 15px; text-align: center;
+		}
+
+		.link{
+			text-decoration: none; color: white;
+		}
+		
+
+		fieldset{
+			width: 70%; height: 600px;
+			margin: auto;
+			background-color: #FDEBD0; 
+			transition: all 1s;
+
+		}
+		#big {
+			margin-top: 200px;
+		}
+		#big td{
+			padding: 10px;
+		}
+
+		#t{
+			text-align: center; box-sizing: border-box;
+		}
+
+		#submit {
+			width: 90px;
+			height: 45px;
+			font-weight: bold;
+			background-color: #196F3D;
+			color: white;
+			box-sizing: border-box;
+			box-shadow: 3px 2px black;
+			border-radius: 20%;
+			cursor: pointer;
+		}
+		.sd{
+			box-shadow: 3px 2px black;
+			cursor: pointer;
+		}
+		.sd1{
+			box-shadow: 4px 4px black;
+		}
+
+		#d5{
+			width: 100%; height: 170px;
+			text-align: center;
+			background-color: #13005B;
+			color: white;
+			padding-top: 10px;
+			box-sizing: border-box;
+			float: left;
+		}
+		#d5 span {
+			font-family: monospace; color: #D35400;
+			font-weight: bold;
+		}
+		#dc{
+		text-decoration: none; color: #D35400;
+	}
+
+	</style>
+	
+</head>
+<body onscroll="showQC()">
+<div id = "qc">
+	<a href="Assignment.html"><img src="Hinh\logo-2.png"></a>
+		<ul class = "u1" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li><a href="gioithieuAgm.html" class="link">GIỚI  THIỆU</a></li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN  PHẨM</a></li>
+		<li><a href="blogAgm.html" class="link">BLOG  HOA</a></li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN  HỆ</a></li>
+	</ul>
+
+</div>
+<div id = "cha">
+<div id = "d1">
+	<div id = "d11">
+	<a href="Assignment.html"><img src="Hinh\logoLVD.png">
+	<ul class = "u" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li>|</li>
+		<li><a href="gioithieuAgm.html" class = "link">GIỚI  THIỆU</a></li>
+		<li>|</li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN PHẨM</a></li>
+		<li>|</li>
+		<li><a href="blogAgm.html" class="link">BLOG HOA</a></li>
+		<li>|</li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN HỆ</a></li>
+	</ul>
+	</div>
+<div id = "big">
+	<fieldset>
+		<legend><font size="5" color="#E03106"><b>...LIÊN HỆ VỚI LAVENDER SHOP...</b></font></legend>
+		
+<table width = 100% align = "center" id="t">
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td align = "right">Họ và tên <font color = "red"><b>*</b></font></td>
+					<td><input type = "Text" size = "50" class = "sd1"></td>
+				</tr>
+
+				<tr>
+					<td align = "right">Địa chỉ <font color = "red"><b>*</b></font></td>
+					<td><input type = "Text" size = "50" class = "sd1"></td>
+				</tr>
+				<tr>
+					<td align = "right">Email <font color = "red"><b>*</b></font></td>
+					<td><input type = "Text" size = "50" class = "sd1"></td>
+				<td ><select class="sd">
+					<option>@fpt.edu.vn</option>
+					<option>@yahoo.com</option>
+					<option>@gmail.com</option>
+					<option>@gmail.com.vn</option>
+				</select>
+				</td>
+				</tr>
+				<tr>
+					<td align = "right">Số điện thoại <font color = "red"><b>*</b></font></td>
+					<td><input type = "Text" size = "50" class = "sd1"></td>
+				</tr>
+				
+				<tr>
+					<td valign = "top" align = "right">Bạn biết chúng tôi qua: <font color = "red"><b>*</b></font> :</td>
+					<td align="left">
+						<input type = "checkbox" class="sd" />Quảng cáo bên web khác
+						<br /><input type = "checkbox" class="sd" /> Facebook
+						<br /><input type = "checkbox" class="sd" />Bạn bè giới thiệu
+					</td>
+				</tr>
+				<tr>
+					<td valign = "top" align = "right">Góp ý cho chúng tôi: <font color = "red"><b>*</b></font></td>
+					<td align="left" ><textarea cols="40" rows="6" class="sd1"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Gửi góp ý" id = "submit" onclick="return validate()"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br />
+<h2>SHOP LAVENDER CHÂN THÀNH CẢM ƠN NHỮNG GÓP Ý CỦA CÁC BẠN</h2>
+</fieldset>
+</div>
+</div>
+</div>
+
+
+<div id = "d5">
+	<p><span><a href="Assignment.html" id = "dc">Shop Thế Giới Lavender</a> </span><br />
+Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận<br />
+Hotline: <span>0169 997 5517 </span>(Mr Trin)<br />
+Facebook: <span>Thế giới Lavender</span><br /><br /><a href="https://www.facebook.com/trin.nguyen.16" target="_blank"><img src="Hinh\facebook2.png" width="120px" height="30px"></a></p>
+</div>
+</body>
+</html>

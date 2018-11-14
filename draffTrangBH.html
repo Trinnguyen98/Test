@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300,400');
+</style>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+	* {
+		text-decoration: none;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		}
+* {font-family: 'Arima Madurai', cursive;}
+	#muahang {
+		width: 165px;
+		height: 50px;
+		background-color: #0213EE;
+		position: fixed;
+		top: 250px;
+		z-index: 2;
+		border-radius: 5%;
+		text-align: center;
+		font-size: 20px;
+		padding-bottom: 20px;
+
+			}
+	#muahang a {
+		text-decoration: none;
+		color: white;
+		/*font-weight: bold;*/
+
+	}
+	#giohang{
+		width: 165px;
+		height: 50px;
+		background-color: #0213EE;
+		position: fixed;
+		top: 350px;
+		z-index: 2;
+		border-radius: 5%;
+		text-align: center;
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+	#giohang a {
+		color: white;
+	}
+
+
+	#giaohang{
+		width: 350px;
+		height: 175px;
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		z-index: 2;
+		background-image: url(Hinh/giaohang.png);
+		background-size: cover;
+	}
+	#giaohang span{
+			position: absolute;
+			left: 5px;
+			right: 5px;
+			cursor: pointer;
+			color: red;
+		}
+	#qc {
+			width: 100%; height: 80px;
+			background-color: #13005B;
+			margin-top: -100px;	
+			transition: all 1s;
+			position: fixed;
+			z-index: 2; color: white;
+		}
+	#qc img {
+		margin-top: 20px; margin-left: 100px;
+	}
+	.u1 {
+		float: right; /*font-variant: small-caps; */width: 50%; height: 100px; box-sizing: border-box; margin-top: 0; /*font-weight: bold*/; margin-top: 20px;
+	}
+	.u1 li {
+		float: left; width: 20%; height: 
+		100px; box-sizing: border-box;
+	}
+
+	#cha{
+		overflow: hidden; width: 100%;
+	}
+
+
+	#d1 {
+		text-align: center; /*font-weight: bold;*/
+		 color: white;
+		width: 100%; background-image: url(Hinh/16.jpg); background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			height: 700px; padding-top: 200px;
+			transition: all 1s; box-sizing: border-box;
+
+	}
+
+	#d1:hover { transform: scale(1.1, 1.1);}
+
+	#d11 {
+		width: 100%; height: 200px; background-color: #13005B;
+		opacity: 0.5; box-sizing: border-box; padding-top: 50px;
+
+	}
+
+
+	ul.u {
+			 width:82%; height: 30px; box-sizing: border-box; float: center; clear: both;
+			 padding-left: 270px;
+	}
+	ul.u li {
+		float: left; width: 11%; height: 30px; list-style-type:none; box-sizing: border-box; text-align: center; font-size: 15px;
+	}
+
+	.link{
+		text-decoration: none; color: white;
+	}
+
+	#listsp{
+		margin-top: 200px;
+		margin-bottom: 100px;
+		width: 100%;
+		height: 100px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	#listsp h1{
+		font-size: 60px; 
+		color: #8D159E;
+		font-family: initial;
+	}
+
+	.u2{
+		width: 80%; box-sizing: border-box;
+		 height: 30px; clear: both;
+		float: left; margin-left: 10%;
+		color: #C86BD5;
+	}
+
+	.u2 li {
+		float: left; width: 33%; box-sizing: border-box;
+		text-align: center; font-size: 30px;
+
+	}
+
+	.clear::before{
+			display: table;
+			content: "";
+		}
+	.clear::after{
+			display: table;
+			content: "";
+			clear: both;
+	}
+	#menu {
+			width: 35px;
+			padding-top: -2px;
+			float: left;
+	}
+	#menu div {
+   		width: 30px;
+    	height: 4px;
+   		background-color: white;
+    	margin: 5px 0;
+	}
+	#hoaKho-dauThom-quaTang {
+			width: 100%;
+			height: 100vh;
+			background-color: violet;
+			overflow: hidden;
+			box-sizing: border-box;
+	}
+		
+	#subHoaKho-dauThom-quaTang {
+			width: 400%;
+			height: 100vh;
+			animation-name: laishow;
+			animation-iteration-count: infinite;
+			animation-duration: 16s;
+			transition: all;
+			box-sizing: border-box;
+			position: relative;
+			z-index: 1;
+	} 
+	#subHoaKho-dauThom-quaTang img{
+			width: 25%;
+			height: 100vh;
+			float: left;
+	}
+	@keyframes laishow
+		{
+			0%   {transform:translate( 0%, 0%);}
+			30%  {transform:translate(-25%, 0%);}
+			60%  {transform:translate(-50%, 0%);}
+			100% {transform:translate(-75%, 0%);}
+		}
+		
+	.dssp {
+			width: 100%;
+			background-color: #e5e5e5;
+			
+	}	
+
+	.subto {
+
+			max-width: 80%;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+
+	}
+
+	.sub {
+			width: 300px;
+			height: 500px;
+			background-color: white;
+			margin-bottom: 40px;
+			border-radius: 5%;
+			box-shadow: 3px 3px #888888;
+	}
+
+	.sub img {
+			width: 100%;
+			height: 340px;
+
+	}
+	.sub img:hover {
+			 opacity: 0.6;
+			 cursor: pointer;
+	}                                                             
+	.sub h2 {
+			
+			padding: 4px;
+			padding-top: 6px;
+			margin: 0px;
+			text-align: center;
+		/*	font-variant: small-caps;*/
+	}
+	.sub p {
+			margin-top: 5px;
+			text-align: center;
+	}
+
+
+	
+
+		input {
+		width: 50px; height: 50px;
+		background-color: red;
+		color: white;
+		border-radius: 100%;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		}
+	#d5{
+		width: 100%; height: 250px;
+		text-align: center;
+		background-color: #13005B;
+		color: white;
+		padding-top: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+	#d5 span {
+		color: #D35400;
+	
+	}
+	#dc{
+		text-decoration: none; color: #D35400;
+	}
+
+	#detail {
+			width: 50%; height: auto;
+			background-color: #ffaaaa;
+			position: fixed;
+			display: none;
+			left: 300px;
+			top: 120px;
+			z-index: 2;
+			border: solid 2px black;
+		}
+
+	#infor {
+			width: 40%; height: auto;
+			float: left;
+			margin-left: 3%;
+			line-height: 2em;
+			font-style: italic;
+			font-size: 1.2em;
+		}
+	#hinh {
+			width: 45%; height: 400px; float: left;
+		}
+
+	#detail span{
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+			cursor: pointer;
+			color: red;
+			font-size: 18px;
+		}
+		#br-cuoi {
+			width: 100%;
+			height: 460px;
+			background-image: url(Final/br1.jpg);
+			background-attachment:fixed; /*backround dung yen*/
+			background-size: 1350px 680px;
+			
+		}
+
+		#chuBackground {
+			margin:100px 500px 300px 550px;
+			position: absolute;
+			z-index: 1;
+			text-align: center;
+			font-style: italic;
+			font-variant: small-caps;
+			font-size: 28px;
+			
+		}
+		#chuBackground > h1 {
+			color: #ff4580;
+			font-size: 60px;
+		}
+		
+		.sp-banchay {
+			width: 100%;
+			height: 1400px;
+			background-color: #e5e5e5;
+	}	
+	
+	#p-gioithieu {
+			width: 100%;
+			height: 380px;
+			background-color: #e5e5e5; 
+		}
+		#div-gioithieu {
+			width: 70%;
+			height: 380px;
+			margin: auto;
+			background-color: #d4aaff;
+		}
+		#div-gioithieu p{
+			padding: 40px;
+			line-height: 1.6em;
+			margin: 0px;
+			font-size: 24px;
+			font-style: italic;
+		}
+
+		#gioithieu {
+			width: 100%;
+			height: 240px;
+			background-color:  #e5e5e5;
+			text-align: center;
+		}
+
+		#gioithieu h2 {
+    		line-height: 1.2em;
+			font-size: 60px;
+			margin: 0px;
+			padding: 20px;
+		}
+
+		#gioithieu p {
+			font-size: 17px;
+			font-style: italic;
+		}
+		#banner-gioithieu {
+			width: 100%; 
+			height: 100px; 
+			overflow: hidden;
+			background-color: black;
+		}
+		#conbanner {
+			width: 300%; height: 100px; 
+			animation-name: laishow2;
+		 	animation-iteration-count: infinite; 
+		 	animation-duration: 15s;
+		 	transition: all;
+		 	
+		 }
+		#conbanner div {width: 25%; height: 100px; float: left;
+			background-color: black;
+			
+				  }
+ 		#conbanner h2 {
+			color: white;
+			font-size: 32px;
+			font-style: italic;
+			padding-top: 5px;
+				  }
+		#trang{
+			background-color: #DE8F15;
+			font-weight: bold;
+		}
+		.danhmuc{
+			font-weight: bold;
+			color: black;
+		}
+
+		@keyframes laishow2
+		{
+			0% {transform:translate(0px,0px);}
+			
+			99% {transform: translate(-35%,0px);}
+			100% {transform: translate(-40%, 0px);}
+		
+</style>
+<script>
+	function showQC() {
+			var y = window.pageYOffset;
+			if(y>700){
+				var d = document.getElementById("qc");
+				d.style.marginTop='0px';
+			}else{
+				var d = document.getElementById("qc");
+				d.style.marginTop='-100px';
+			}
+		}
+</script>
+
+</head>
+<body onload="display()" onscroll="showQC()">
+	<div id = "muahang">
+		<p><a href="dathang.html">Mua Hàng</a></p>
+	</div>
+	<div id = "giohang">
+		<p><a href="giohang.html">Giỏ Hàng</a></p>
+	</div>
+	<div id = "giaohang">
+		<span onclick="closeGH()">Close</span>
+	</div>
+	<div id = "qc">
+	<a href="Assignment.html"><img src="Hinh\logo-2.png"></a>
+		<ul class = "u1" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li><a href="gioithieuAgm.html" class="link">GIỚI  THIỆU</a></li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN  PHẨM</a></li>
+		<li><a href="blogAgm.html" class="link">BLOG  HOA</a></li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN  HỆ</a></li>
+	</ul>
+</div>
+<div id = "cha">
+<div id = "d1">
+	<div id = "d11">
+	<a href="Assignment.html"><img src="Hinh\logoLVD.png"></a>
+	<ul class = "u" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li>|</li>
+		<li><a href="gioithieuAgm.html" class = "link">GIỚI  THIỆU</a></li>
+		<li>|</li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN PHẨM</a></li>
+		<li>|</li>
+		<li><a href="blogAgm.html" class="link">BLOG HOA</a></li>
+		<li>|</li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN HỆ</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+<div id = "listsp">
+	<h1>DANH MỤC SẢN PHẨM</h1>
+	<ul class = "u2" style="list-style-type: none;">
+		<li id = "trang"><a href="draffTrangBH.html" class="danhmuc">Hoa Lavender</a></li>
+		<li><a href="draffTrangQT.html" class="danhmuc"> Quà Tặng Lavender</a></li>
+		<li><a href="draffTrangTD.html" class="danhmuc">Tinh dầu Lavender</a></li>
+	</ul>
+</div>
+	
+	<div id="hoaKho-dauThom-quaTang">
+
+		<div id="subHoaKho-dauThom-quaTang">
+			<img src="Final/HoaKho0.jpg">
+			<img src="Final/DauThom1.jpg">
+			<img src="Final/QuaTang1.jpg">
+			<img src="Final/HoaKho0.jpg">
+		</div>
+	</div>
+	<div id="gioithieu">
+		<h2>HOA KHÔ LAVENDER PHÁP</h2>
+		<p>ĐA DẠNG MẪU, SẮP XẾP HOA GỌN GÀNG, TỈ MỈ, CẤU TRÚC BÓ HOA HỢP LÝ, THẨM MỸ, MÀU</p>
+		<p>SẮC HÀI HÒA VÀ SANG TRỌNG! LAVENDER PHÁP - THƠM MÙI MÙA HÈ CHÂU ÂU! ♥</p>
+	</div>
+	<div id="dssp">
+	</div>
+	
+	<div id="detail">
+	<img src="" id="hinh">
+	<div id="infor"></div>
+
+	<span onclick="closeDetail()">Close</span>
+	
+</div> 
+
+	<div id="sp-banchay">
+		<div id="banner-gioithieu">
+			<div id="conbanner">
+				<div></div>
+				<div><h2>BÓ HOA LAVENDER KHÔ</h2></div>
+			<div></div>
+			</div>
+		</div>
+
+		<div id="p-gioithieu">
+			<div id="div-gioithieu"><center><p>
+			❤️👉🏻Hoa lavender khô phù hợp dành tặng cho người yêu, bạn bè, người thân vào các dịp quan trọng như SINH NHẬT, KHAI TRƯƠNG, NGÀY KỶ NIỆM v.v…<br>
+			❤️👉🏻Hoa lavender khô có thể trang trí nhà cửa, bàn làm việc, quầy tiếp tân…<br>
+			❤️👉🏻Hoa lavender khô – mang hương thơm mùa hè châu Âu, có thể bền từ 1-2 năm.<br>
+			❤️👉🏻Hoa hồng vĩnh cửu là hoa hồng thật đã được xử lý, hoa có màu sắc tươi sáng và cánh hoa mềm mại như khi còn tươi, đặc biệt hoa hồng vĩnh cửu có thể bền từ 3-5 năm.
+			</center></p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="br-cuoi">
+		<div id="chuBackground">
+			<p>If i know what</p><h1>LOVE</h1>
+			<p>it is because of you...</p>
+		</div>
+	</div>
+
+	<div id = "d5">
+	<p><span><a href="Assignment.html" id = "dc">Shop Thế Giới Lavender</a> </span><br />
+Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận<br />
+Hotline: <span>0169 997 5517 </span>(Mr Trin)<br />
+Facebook: <span>Thế giới Lavender</span><br /><br /><a href="https://www.facebook.com/trin.nguyen.16" target="_blank"><img src="Hinh\facebook2.png" width="120px" height="30px"></a></p>
+</div>
+	
+	
+	<script src="draffTrangBH.js"></script>
+</body>
+</html>

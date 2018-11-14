@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+		<style>
+		body{
+		margin: 0px; background-color: #FDEBD0; 
+	}
+	#qc {
+			width: 100%; height: 80px;
+			background-color: #13005B;
+			margin-top: -100px;	
+			transition: all 1s;
+			position: fixed;
+			z-index: 2; color: white;
+		}
+	#qc img {
+		margin-top: 20px; margin-left: 100px;
+	}
+	#cha{
+		overflow: hidden; width: 100%;
+	}
+		#d1 {
+		text-align: center; font-weight: bold;
+		font-family: sans-serif; color: white;
+		width: 100%; background-image: url(Hinh/16.jpg); background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			height: 700px; padding-top: 200px;
+			transition: all 1s; box-sizing: border-box;
+
+	}
+	#d1:hover { transform: scale(1.1, 1.1);}
+
+	#d11 {
+		width: 100%; height: 200px; background-color: #13005B;
+		opacity: 0.5; box-sizing: border-box; padding-top: 50px;
+
+	}
+
+
+	ul.u {
+			 width:82%; height: 30px; box-sizing: border-box; font-weight: bold; float: center; clear: both;
+			 padding-left: 270px;
+	}
+	ul.u li {
+		float: left; width: 11%; height: 30px; list-style-type:none; box-sizing: border-box; text-align: center; font-size: 15px;
+	}
+	
+
+	.u1 {
+		float: right; font-variant: small-caps; width: 50%; height: 100px; box-sizing: border-box; margin-top: 0; font-weight: bold; margin-top: 20px;
+	}
+	.u1 li {
+		float: left; width: 20%; height: 
+		100px; box-sizing: border-box;
+	}
+		h1{
+		margin-left: 10%; margin-top: 100px;
+		font-family: Georgia;
+
+	}
+	#title {
+		text-align: center;
+		font-size: 50px;
+		margin: 100px;
+		font-weight: bold;
+	}
+
+
+	#d4{
+		width: 40%; height: auto;
+		float: left; box-sizing: border-box;
+		text-align: justify; margin-left: 100px;
+		margin-right: 50px;
+		font-size: 18px;
+		font-style: italic;
+	}
+	.link{
+		text-decoration: none; color: white;
+	}
+
+
+	#gioithieu{
+		width: 70%;
+		height: auto;
+		margin-left: 10%;
+		font-family: Comic Sans MS;
+	}
+	#border{
+			border-top: dashed 2px #B59FB8;
+			margin-top: 100px;
+	}
+	#gioithieu img {
+	
+		margin-left: 20%;
+
+	}
+	@keyframes laisau
+{
+	0%{
+		transform: translate(0px, 0px);
+
+	}
+
+	33%{
+		transform: translate(-600px, 0px);
+
+	}
+	66%{
+		transform: translate(-1200px, 0px);
+
+	}
+	100% {
+		transform: translate(-1800px, 0px);
+
+	}
+}
+	#cha1 {
+		width: 600px; height: 400px; overflow: hidden;
+	}
+	#con {
+		width: 2400px; height: 400px;
+	}
+	#con img {
+		width: 600px; height: 400px; float: left;
+		animation-name: laisau;
+		animation-duration: 10s; animation-iteration-count: infinite;
+	}
+
+	#d5{
+		margin-top: 50px;
+		width: 100%; height: 170px;
+		text-align: center;
+		background-color: #13005B;
+		color: white;
+		padding-top: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+	#d5 span {
+		font-family: monospace; color: #D35400;
+		font-weight: bold;
+	}
+	#dc{
+		text-decoration: none; color: #D35400;
+	}
+
+
+
+	</style>
+	<script>
+	function showQC() {
+			var y = window.pageYOffset;
+			if(y>700){
+				var d = document.getElementById("qc");
+				d.style.marginTop='0px';
+			}else{
+				var d = document.getElementById("qc");
+				d.style.marginTop='-100px';
+			}
+		}
+</script>
+</head>
+<body onscroll="showQC()">
+	<div id = "qc">
+	<a href="Assignment.html"><img src="Hinh\logo-2.png"></a>
+		<ul class = "u1" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li><a href="gioithieuAgm.html" class="link">GIỚI  THIỆU</a></li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN  PHẨM</a></li>
+		<li><a href="blogAgm.html" class="link">BLOG  HOA</a></li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN  HỆ</a></li>
+	</ul>
+</div>
+<div id = "cha">
+<div id = "d1">
+	<div id = "d11">
+	<a href="Assignment.html"><img src="Hinh\logoLVD.png"></a>
+	<ul class = "u" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li>|</li>
+		<li><a href="gioithieuAgm.html" class = "link">GIỚI  THIỆU</a></li>
+		<li>|</li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN PHẨM</a></li>
+		<li>|</li>
+		<li><a href="blogAgm.html" class="link">BLOG HOA</a></li>
+		<li>|</li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN HỆ</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+	<p id = "title">GIỚI THIỆU LAVENDER SHOP</p>
+
+<div id = "d4">
+	<p>LavenderShop với uy tín về chất lượng hoa tươi nhập khẩu hơn 12 năm tại Việt Nam và Úc. Là sứ giả chuyển thông điệp yêu thương và luôn đáp ứng mọi nhu cầu của khách hàng trong và ngoài nước. húng tôi cẩn trọng chọn từng bông hoa, được nhập khẩu trực tiếp từ các cánh đồng hoa trên khắp Thế Giới. Và qua đôi bàn tay tài hoa của các nghệ nhân giàu kinh nghiệm, LavenderShop luôn luôn làm hài những khách hàng khó tính nhất từ chính sản phẩm hoa tươi đẹp và độc đáo mang dấu ấn riêng. Đồng thời mang đến nhiều sự lựa chọn, về mẫu mã và giá cả. Chúng tôi luôn đồng hành cùng bạn trong những dịp thường ngày của đời sống và cả ngày trọng đại. Không chỉ đơn giản là Hoa, mà còn là nghệ thuật và niềm đam mê bất tận. Vì vậy xin đừng ngại liên hệ với chúng tôi! Hãy để những cánh hoa làm sứ giả yêu thương!</p>
+	<img src="Hinh\logolvd.gif" width="100%" height="auto">
+</div>
+
+<div id = "cha1">
+	<div id = "con">
+		<img src="Hinh\lavender1.jpg">
+		<img src="Hinh\lavender2.jpg">
+		<img src="Hinh\lavender4.jpg">
+		<img src="Hinh\lavender1.jpg">
+	</div>
+</div>
+<p id = border></p>
+<h1>Ý nghĩa hoa lavender /hoa oải hương</h1>
+<div id =  "gioithieu">
+	<p>Hoa lavender là thảo mộc thiêng liêng của mùa hè, nổi tiếng ở miền Nam nước Pháp như Provence, Avignon. Nhưng hoa lavender lại có nguồn gốc từ miền Địa Trung Hải và được biết đến từ thời Hy Lạp cổ đại. Người La Mã đã mang nó phổ biến ra khắp châu Âu.</p>
+	<p>Hoa lavender có những ý nghĩa đặc biệt như sau:</p>
+	<p>– Hoa lavender mang một vẻ đẹp sang trọng, rất “Tây Tây”, được gọi là herb of love (thảo dược tình yêu) tượng trưng cho sự thủy chung trong tình yêu và sự trung thành trong tình bạn.</p>
+	<img src="Hinh\gt1.jpg">
+	<p>– Bên cạnh đó, hoa lavender còn là loại hoa mang ý nghĩa may mắn. Nếu lưu giữ những bông hoa lavender khô trong nhà, chúng sẽ mang lại sự bình yên, hoà thuận cho gia chủ.</p>
+	<img src="Hinh\gt2.jpg"  width="600px" height="400px">
+	<p>– Hương lavender thơm dịu nhẹ thoang thoảng, là hương thảo mộc tự nhiên giúp thư giãn, giúp bạn giảm stress. Hoa lavender được dùng để làm tinh dầu, nước hoa, túi thơm.</p>
+	<img src="Hinh\gt3.jpg">
+	<p>– Ở những nơi có khí hậu khô, hoa oải hương khô có thể thơm suốt 5 năm và còn có thể lâu hơn nữa.
+Chính vì ý nghĩa đặc biệt của loài hoa này và thời gian sử dụng lâu bền của nó mà thời gian gần đây hoa lavender khô trở thành trào lưu rất HOT! Không chỉ riêng với các bạn trẻ biết đến để mua về tặng nhau thể hiện tình cảm với người yêu mà hoa lavender khô này còn được chọn làm hoa tặng Sếp, tặng sinh nhật nhân viên, đối tác, trang trí đám cưới, event công ty, trưng hoa ngày Tết… Hoa lavender khô Pháp ngày nay trở thành món quà tặng sang trọng và rất tinh tế!</p>
+<p>Fanpage: <a href = "https://www.facebook.com/trin.nguyen.16" target="_blank">https://www.facebook.com/thegioilavender</a></p>
+</div>
+<div id = "d5">
+	<p><span><a href="Assignment.html" id = "dc">Shop Thế Giới Lavender</a> </span><br />
+Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận<br />
+Hotline: <span>0169 997 5517 </span>(Mr Trin)<br />
+Facebook: <span>Thế giới Lavender</span><br /><br /><a href="https://www.facebook.com/trin.nguyen.16" target="_blank"><img src="Hinh\facebook2.png" width="120px" height="30px"></a></p>
+</div>
+
+</body>
+</html>

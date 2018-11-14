@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+		<style>
+	body{
+		margin: 0px; background-color: #FDEBD0;
+	}
+		#qc {
+			width: 100%; height: 80px;
+			background-color: #13005B;
+			margin-top: -100px;	
+			transition: all 1s;
+			position: fixed;
+			z-index: 2; color: white;
+		}
+	#qc img {
+		margin-top: 20px; margin-left: 100px;
+	}
+	.u1 {
+		float: right; font-variant: small-caps; width: 50%; height: 100px; box-sizing: border-box; margin-top: 0; font-weight: bold; margin-top: 20px;
+	}
+	.u1 li {
+		float: left; width: 20%; height: 
+		100px; box-sizing: border-box;
+	}
+
+	#cha{
+		overflow: hidden; width: 100%;
+	}
+
+
+	#d1 {
+		text-align: center; font-weight: bold;
+		font-family: sans-serif; color: white;
+		width: 100%; background-image: url(Hinh/16.jpg); background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			height: 700px; padding-top: 200px;
+			transition: all 1s; box-sizing: border-box;
+
+	}
+
+	#d1:hover { transform: scale(1.1, 1.1);}
+
+	#d11 {
+		width: 100%; height: 200px; background-color: #13005B;
+		opacity: 0.5; box-sizing: border-box; padding-top: 50px;
+
+	}
+
+
+	ul.u {
+			 width:82%; height: 30px; box-sizing: border-box; font-weight: bold; float: center; clear: both;
+			 padding-left: 270px;
+	}
+	ul.u li {
+		float: left; width: 11%; height: 30px; list-style-type:none; box-sizing: border-box; text-align: center; font-size: 15px;
+	}
+	.link{
+		text-decoration: none; color: white;
+	}
+	h1 {
+		font-size: 50px;
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 100px;
+		font-family: Consolas;
+	}
+	#d2{
+			background-color: white;
+			background-image: url(Hinh/dathangbg.jpg); background-repeat: repeat-y;
+				background-position: right;
+				background-attachment: fixed;
+				width: 100%;
+				height: 700px;
+
+		}
+		#donhang{
+			width: 100%; height: auto;
+			border: 1px solid gray;
+			float: left; margin-bottom:1%;
+			box-sizing: border-box;
+			border: none;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+		}
+		#donhang p{
+			margin: 1%;
+		}
+
+		fieldset{
+			width: 42%;
+			height: 300px;
+			float: left;
+			margin-left: 3%;
+			margin-top: 50px;
+			background-color: #FDEBD0;
+			transition: all 1s;
+		}
+		fieldset:hover{ transform: scale(1.1, 1.1)
+			
+		}
+
+		legend {
+			color: #041AB9;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		/*fieldset td{
+			padding: 10px;
+		}*/
+		#submit {
+			width: 150px;
+			height: 45px;
+			font-weight: bold;
+			background-color: #CF0D21;
+			color: white;
+			box-sizing: border-box;
+			box-shadow: 3px 2px black;
+			border-radius: 20%;
+			margin-top: 30px;
+			margin-left: 43%;
+			cursor: pointer;
+		}
+		.sd{
+			box-shadow: 3px 2px #877274;
+		}
+		.sd1{
+			box-shadow: 3px 2px #877274;
+		}
+		#d5{
+		width: 100%; height: 170px;
+		text-align: center;
+		background-color: #13005B;
+		color: white;
+		padding-top: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+	#d5 span {
+		font-family: monospace; color: #D35400;
+		font-weight: bold;
+	}
+	#dc {
+		text-decoration: none;
+		color: #D35400;
+	}
+	.goiY{
+		color: red;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		opacity: 0;
+	}
+	.sdt1{
+		z-index: 1;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: red;
+		opacity: 0;
+	}
+	.sdt2{
+		z-index: 2;
+		margin-top: -18px;
+		margin-bottom: 0px;
+		color: red;
+		opacity: 0;
+		
+	}
+	#check{
+		cursor: pointer;
+	}
+	select{
+		width: 150px;
+		height: 30px;
+		font-size: 15px;
+	}
+
+
+	</style>
+		<script>
+		function showDetail()
+	{
+	//lay thong tin dong ho may tinh cua may.
+	var d = new Date();
+	var ngay = d.getDate();
+	var thang = d.getMonth() + 1;
+	var nam = d.getFullYear();
+	var p_ngaydat = document.getElementById("ngaydat");
+	p_ngaydat.innerHTML += ngay+"/"+thang+"/"+nam;
+
+	//tao so ddh ngau nhien dai 5 so: 10000 - 99999
+	var x = Math.round(Math.random()*89999 + 10000);
+	var p_doddh = document.getElementById("soDDH");
+	p_doddh.innerHTML += x;
+	}
+	</script>
+	<script>
+	
+			function validate()
+			{
+				var sd1 = document.getElementsByClassName('sd1');
+				var sd2 = document.getElementsByClassName('goiY');
+				var sdt1 = document.getElementsByClassName('sdt1');
+				var sdt2 = document.getElementsByClassName('sdt2');
+				var check = document.getElementById('check');
+				var c = 0;
+				var t = 0;
+				for(var i = 0; i < sd2.length; i++)
+				{
+					sd2[i].style.opacity = "0";
+				}
+
+				if (sd1[0].value=="") 
+				{
+					sd1[0].focus();
+					sd2[0].style.opacity = "1";
+					c++;
+				}
+
+				if (sd1[1].value=="") 
+				{
+					sd1[1].focus();
+					sd2[1].style.opacity = "1";
+					c++;
+				}
+
+				if (sd1[2].value == "") 
+				{
+					sd1[2].focus();
+					sd2[2].style.opacity = "1";
+					c++;
+				}
+				 if (sd1[3].value == "")
+				{
+					sd1[3].focus();
+					sdt2[0].style.opacity = "0";
+					sdt1[0].style.opacity = "1";
+					c++;
+				}
+				else if(sd1[3].value.match("^[0][0-9]{9,10}$")==null) 
+				{
+					sd1[3].focus();
+					sdt1[0].style.opacity = "0";
+					sdt2[0].style.opacity = "1";
+					c++;
+				}
+
+				 if(sd1[4].value == "")
+				{
+						sd1[4].focus();
+						sd2[3].style.opacity = "1";
+						c++;
+				}
+
+				if(check.checked == true && c == 0)
+				
+				{
+				alert("Đơn hàng của bạn đang được xử lý. Chúng tôi sẽ gọi điện cho bạn sớm nhất có thể để xác nhận đơn hàng này. Giờ thì quay lại trang chủ thôi nào.");
+				window.open("Assignment.html","_top");
+				return true;
+				}
+
+
+				 if(sd1[5].value == "")
+				{
+						sd1[5].focus();
+						sd2[4].style.opacity = "1";
+						c++;
+				}
+
+
+				 if(sd1[6].value == "")
+				{
+						sd1[6].focus();
+						sd2[5].style.opacity = "1";
+						c++;
+				}
+
+				if (sd1[7].value == "")
+				{
+					sd1[7].focus();
+					sdt2[1].style.opacity = "0";
+					sdt1[1].style.opacity = "1";
+					c++;
+				}
+				else if(sd1[7].value.match("^[0][0-9]{9,10}$")==null) 
+				{
+					sd1[7].focus();
+					sdt1[1].style.opacity = "0";
+					sdt2[1].style.opacity = "1";
+					c++;
+				}
+
+				if(check.checked == true)
+				{
+					for(var i = 4; i < sd2.length; i++)
+					{
+						sd2[i].style.opacity = "0";
+					}
+
+						sdt1[1].style.opacity = "0";
+						sdt2[1].style.opacity = "0";
+
+				}
+				if(c  >= 8)
+				{
+					alert("Vui lòng nhập thông tin mua hàng");
+					for(var i = 0; i < sd2.length; i++)
+					{
+						sd2[i].style.opacity = "0";
+						sdt1[0].style.opacity = "0";
+						sdt1[1].style.opacity = "0";
+						sdt2[0].style.opacity = "0";
+						sdt2[1].style.opacity = "0";
+					}
+					return false;
+
+				}
+				if (c > 0) 
+				{
+					return false;
+				}
+				alert("Đơn hàng của bạn đang được xử lý. Chúng tôi sẽ gọi điện cho bạn sớm nhất có thể để xác nhận đơn hàng này. Giờ thì quay lại trang chủ thôi nào.");
+				window.open("Assignment.html","_top");
+				return true;
+			}
+	</script>
+	<script>
+
+function checker(event) 
+	{
+		var sd1 = document.getElementsByClassName('sd1');
+		var sd2 = document.getElementsByClassName('goiY');
+		var sdt1 = document.getElementsByClassName('sdt1');
+		var sdt2 = document.getElementsByClassName('sdt2');
+    	var x = event.keyCode;
+    	if (x != null)
+    	{
+			for(var i = 0; i < sd2.length; i++)
+					{
+				sd2[i].style.opacity = "0";
+			}
+			sdt1[0].style.opacity = "0";
+			sdt1[1].style.opacity = "0";
+			sdt2[0].style.opacity = "0";
+			sdt2[1].style.opacity = "0";
+    	}
+	}
+	</script>
+</head>
+<body onload="showDetail()">
+<div id = "cha">
+<div id = "d1">
+	<div id = "d11">
+	<a href="Assignment.html"><img src="Hinh\logoLVD.png"></a>
+	<ul class = "u" style="list-style-type: none;">
+		<li><a href="Assignment.html" class = "link">TRANG CHỦ</a></li>
+		<li>|</li>
+		<li><a href="gioithieuAgm.html" class = "link">GIỚI  THIỆU</a></li>
+		<li>|</li>
+		<li><a href="draffTrangBH.html" class = "link">SẢN PHẨM</a></li>
+		<li>|</li>
+		<li><a href="blogAgm.html" class="link">BLOG HOA</a></li>
+		<li>|</li>
+		<li><a href="LienHeAgm.html" class = "link">LIÊN HỆ</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+<h1>THÔNG TIN MUA HÀNG</h1>
+<div id = "d2">
+<div id = "donhang">
+		<p id = "soDDH">Số ĐĐH: </p>
+		<p id = "ngaydat">Ngày đặt: </p>
+		<p>Hình thức giao hàng: <select>
+			<option>Chuyển thường</option>
+			<option>Chuyển nhanh</option>
+		</select>
+	</p>
+		<p>Tình trạng: Đang xử lý</p>
+
+</div>
+<fieldset>
+	<legend>...THÔNG TIN KHÁCH HÀNG...</legend>
+	<table>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td align="right">Họ và tên: </td>
+						<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập tên.</td>
+					</tr>
+					<tr>
+						<td align="right">Địa chỉ: </td>
+						<td><input type="text" size="50" align="left" class="sd1" onkeydown ="checker(event)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập địa chỉ.</td>
+					</tr>
+					<tr>
+						<td align="right">Email: </td>
+						<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập Email.</td>
+					</tr>
+					<tr>
+						<td align="right">Số điện thoại: </td>
+						<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left" class="sdt"><p class = "sdt1">Vui lòng nhập số điện thoại.</p>
+														<p class = "sdt2">Số điện thoại bạn nhập không hợp lệ.</p></td>
+					</tr>
+					<tr>
+						<td align="right">Tên sản phẩm: </td>
+						<td align="left"><input type="text" size="50" class ="sd1" onkeydown ="checker(event)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập tên sản phẩm.</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="right">
+							<input type="checkbox" id = "check"> Bạn là người nhận hàng?
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</fieldset>
+<fieldset>
+	<legend>...THÔNG TIN NGƯỜI NHẬN...</legend>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td align="right">Người nhận: </td>
+					<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+				</tr>
+				<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập tên người nhận.</td>
+					</tr>
+				<tr>
+					<td align="right">Địa chỉ: </td>
+					<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+				</tr>
+				<tr>
+						<td></td>
+						<td align="left" class = "goiY">Vui lòng nhập địa chỉ người nhận.</td>
+					</tr>
+				<tr>
+					<td align="right">Số điện thoại: </td>
+					<td align="left"><input type="text" size="50" class="sd1" onkeydown ="checker(event)"></td>
+				</tr>
+					<tr>
+						<td></td>
+						<td align="left" class="sdt"><p class = "sdt1">Vui lòng nhập số điện thoại.</p>
+														<p class = "sdt2">Số điện thoại bạn nhập không hợp lệ.</p></td>
+					</tr>
+				<tr>
+					<td align="right" valign="top">Lời nhắn: </td>
+					<td align="left"><textarea cols="40" rows="6" class = "sd"></textarea></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</fieldset>
+<input type="submit" value="Xác nhận đơn hàng" id = "submit" onclick="return validate()">
+</div>
+<div id = "d5">
+	<p><span><a href="Assignment.html" id = "dc">Shop Thế Giới Lavender</a> </span><br />
+Vĩnh Hy - Vĩnh Hải - Ninh Hải - Ninh Thuận<br />
+Hotline: <span>0169 997 5517 </span>(Mr Trin)<br />
+Facebook: <span>Thế giới Lavender</span><br /><br /><a href="https://www.facebook.com/trin.nguyen.16" target="_blank"><img src="Hinh\facebook2.png" width="120px" height="30px"></a></p>
+</body>
+</html>
